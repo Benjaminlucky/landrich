@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* globals.css */
+
+.active-link {
+  color: #2f49d7 !important;
+}
+
+.active-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* Adjust position to control the distance from the text */
+  width: 100%;
+  height: 2px; /* Thickness of the underline */
+  background-color: #f59e0b; /* Yellow underline color */
+  transition: width 0.3s ease-in-out;
+}
+
+.active-link:hover::before {
+  width: 100%;
+}
