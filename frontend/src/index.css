@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 /* globals.css */
-
+body {
+  overflow-x: hidden !important;
+}
 .active-link {
   color: #2f49d7 !important;
 }
